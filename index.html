@@ -21,12 +21,11 @@
     main {
       padding: 20px;
     }
-    .btn-add {
+    .btn-add, .btn-delete {
       display: inline-block;
       padding: 10px 20px;
       font-size: 16px;
       color: #fff;
-      background-color: #75A47F;
       border: none;
       border-radius: 5px;
       text-decoration: none;
@@ -34,8 +33,17 @@
       margin-top: 20px;
       transition: background-color 0.3s ease;
     }
+    .btn-add {
+      background-color: #75A47F;
+    }
     .btn-add:hover {
       background-color: #5b8564;
+    }
+    .btn-delete {
+      background-color: #ff4d4d;
+    }
+    .btn-delete:hover {
+      background-color: #cc0000;
     }
     footer {
       text-align: center;
@@ -43,22 +51,6 @@
       background-color: #ddd;
       color: #555;
     }
-
-
-  .save-button {
-    background-color: #4CAF50; /* Màu nền xanh */
-    color: white; /* Màu chữ trắng */
-    padding: 10px 20px; /* Khoảng cách padding */
-    border: none; /* Bỏ đường viền */
-    border-radius: 5px; /* Bo tròn góc */
-    cursor: pointer; /* Con trỏ chuột khi hover */
-    font-size: 16px; /* Kích thước chữ */
-  }
-
-  .save-button:hover {
-    background-color: #45a049; /* Màu nền khi hover */
-  }
-
   </style>
 </head>
 <body>
@@ -84,6 +76,12 @@
         <li>Hỗ trợ đánh giá hiệu suất làm việc</li>
       </ul>
     </section>
+    <section>
+      <h2>Thêm/Xóa Nhân Viên</h2>
+      <p>Nhấn các nút bên dưới để thêm hoặc xóa thông tin nhân viên.</p>
+      <button class="btn-add" onclick="addEmployee()">Thêm Nhân Viên</button>
+      <button class="btn-delete" onclick="deleteEmployee()">Xóa Nhân Viên</button>
+    </section>
   </main>
   
 
@@ -96,6 +94,10 @@
   <script>
     function addEmployee() {
       alert('Tính năng "Thêm Nhân Viên" đang được phát triển!');
+    }
+
+    function deleteEmployee() {
+      alert('Tính năng "Xóa Nhân Viên" đang được phát triển!');
     }
   </script>
 </body>
